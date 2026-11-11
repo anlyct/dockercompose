@@ -1,0 +1,14 @@
+services:
+  web-app:
+    container_name: super
+    image: nginx
+    ports:
+      - "9999:80"
+
+  database:
+    container_name: boomer
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: asd123.
+    ports:
+      - "3306:3306"
