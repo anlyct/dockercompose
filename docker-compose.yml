@@ -9,6 +9,6 @@ services:
     container_name: boomer
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: asd123.
+      MYSQL_ROOT_PASSWORD: asd123.   #do not expose the password instead make a env variable and add that to .gitignore file
     ports:
       - "3306:3306"
